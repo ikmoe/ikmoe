@@ -287,7 +287,7 @@ export default function AntiLossPage() {
               </span>
             </h1>
             <h2 className="text-lg sm:text-xl font-medium text-muted-foreground tracking-widest uppercase">
-              Anti-Loss Connection Hub
+              长空通信，汇聚全网套餐
             </h2>
             <div className="mt-4 w-24 h-0.5 bg-gradient-to-r from-transparent via-primary/50 to-transparent mx-auto" />
           </div>
