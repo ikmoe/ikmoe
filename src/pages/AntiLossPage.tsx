@@ -370,7 +370,7 @@ export default function AntiLossPage() {
               icon={<WeChatIcon className="w-7 h-7 text-green-500" />}
               title="微信"
               subtitle="添加客服微信"
-              qrLabel="微信二维码"
+              qrLabel="https://pic2.ziyuan.wang/user/ikmoe/2026/02/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20260220123650_1110_72_c0ce5c2c0a517.png"
               delay="stagger-4"
               accentColor="bg-green-500"
               glowColor="rgba(34, 197, 94, 0.15)"
@@ -379,7 +379,7 @@ export default function AntiLossPage() {
               icon={<EnterpriseWeChatIcon className="w-7 h-7 text-blue-500" />}
               title="企业微信"
               subtitle="企业微信客服"
-              qrLabel="企业微信二维码"
+              qrLabel="https://pic2.ziyuan.wang/user/ikmoe/2026/02/17570736635931401388095cad14166ba2f_1c52f6523a3fd.png"
               delay="stagger-5"
               accentColor="bg-blue-500"
               glowColor="rgba(59, 130, 246, 0.15)"
@@ -388,7 +388,7 @@ export default function AntiLossPage() {
               icon={<OfficialAccountIcon className="w-7 h-7 text-emerald-500" />}
               title="公众号"
               subtitle="关注官方公众号"
-              qrLabel="公众号二维码"
+              qrLabel="https://pic2.ziyuan.wang/user/ikmoe/2026/03/e_f52e9acf24f40.png"
               delay="stagger-6"
               accentColor="bg-emerald-500"
               glowColor="rgba(16, 185, 129, 0.15)"
