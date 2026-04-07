@@ -546,12 +546,15 @@ export default function AntiLossPage() {
             </div>
 
             {/* 备案信息 */}
-              <a href="https://beian.miit.gov.cn/" rel="noreferrer"
-                 target="_blank">冀ICP备2025137442号-1</a>
-            </div>
-            <a href="https://beian.mps.gov.cn/#/query/webSearch?code=13053202001845" rel="noreferrer"
-               target="_blank">冀公网安备13053202001845号</a>
-        </div>
+            <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4 text-xs text-muted-foreground/60 dark:text-muted-foreground/50">
+              <div className="flex items-center gap-1.5">
+                <ICPIcon className="w-3.5 h-3.5" />
+                <span>冀ICP备2025137442号-1</span>
+              </div>
+              <div className="flex items-center gap-1.5">
+                <SecurityIcon className="w-3.5 h-3.5" />
+                <span>冀公网安备13053202001845号</span>
+              </div>
 
         {/* 备案信息底部分隔线 */}
         <div className="mt-6 w-32 h-px bg-muted-foreground/10 dark:bg-muted-foreground/20 mx-auto"/>
