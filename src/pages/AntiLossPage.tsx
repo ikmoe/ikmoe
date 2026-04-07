@@ -417,16 +417,16 @@ export default function AntiLossPage() {
 
           {/* Notice Banner */}
           <div className="opacity-0 animate-fade-in-up stagger-3 mb-12">
-            <div className="relative group">
+            <div className="relative group max-w-xl mx-auto">
               <div
                   className="absolute -inset-0.5 bg-gradient-to-r from-amber-500/20 via-orange-500/20 to-amber-500/20 dark:from-amber-500/30 dark:via-orange-500/30 dark:to-amber-500/20 rounded-2xl blur opacity-0 group-hover:opacity-100 transition-opacity duration-500"/>
               <div
-                  className="relative bg-card/50 dark:bg-card/70 backdrop-blur-xl border border-border/40 dark:border-border/60 rounded-2xl p-5 sm:p-6 flex flex-col sm:flex-row items-center gap-5 transition-all duration-300 hover:border-amber-500/30 dark:hover:border-amber-500/40">
+                  className="relative bg-card/50 dark:bg-card/70 backdrop-blur-xl border border-border/40 dark:border-border/60 rounded-2xl p-5 flex flex-col items-center text-center gap-4 transition-all duration-300 hover:border-amber-500/30 dark:hover:border-amber-500/40">
                 <div
                     className="flex-shrink-0 w-12 h-12 rounded-xl bg-amber-500/10 dark:bg-amber-500/15 border border-amber-500/20 dark:border-amber-500/25 flex items-center justify-center">
                   <Bell className="w-6 h-6 text-amber-500 dark:text-amber-400"/>
                 </div>
-                <div className="flex-1 text-center sm:text-left">
+                <div>
                   <p className="text-xs text-muted-foreground dark:text-muted-foreground/70 mb-1 uppercase tracking-wider">重要通知</p>
                   <p className="text-base font-medium text-foreground dark:text-foreground/90">
                     更新资费请查看{" "}
@@ -440,13 +440,6 @@ export default function AntiLossPage() {
                       <ArrowUpRight className="w-3.5 h-3.5"/>
                     </a>
                   </p>
-                </div>
-                <div className="flex-shrink-0">
-                  <img
-                      src="https://pic2.ziyuan.wang/user/ikmoe/2026/02/%E4%B8%8B%E8%BD%BD%20_1__7b01b2616e762.png"
-                      alt="二维码"
-                      className="w-[120px] h-[120px] object-contain"
-                  />
                 </div>
               </div>
             </div>
