@@ -395,16 +395,14 @@ export default function AntiLossPage() {
                 <span>全国资费 · 官方授权</span>
               </div>
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-3">
-              <span
-                  className="bg-gradient-to-r from-primary via-primary to-accent bg-clip-text text-transparent dark:from-primary/90 dark:via-primary/90 dark:to-accent/90">
+              <span className="bg-gradient-to-r from-primary via-primary to-accent bg-clip-text text-transparent dark:from-primary/90 dark:via-primary/90 dark:to-accent/90">
                 长空通信
               </span>
               </h1>
               <h2 className="text-lg sm:text-xl font-medium text-muted-foreground dark:text-muted-foreground/80 tracking-widest uppercase">
                 Changkong Communication
               </h2>
-              <div
-                  className="mt-4 w-24 h-0.5 bg-gradient-to-r from-transparent via-primary/50 dark:via-primary/60 to-transparent mx-auto"/>
+              <div className="mt-4 w-24 h-0.5 bg-gradient-to-r from-transparent via-primary/50 dark:via-primary/60 to-transparent mx-auto"/>
             </div>
           </header>
 
@@ -479,8 +477,7 @@ export default function AntiLossPage() {
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 sm:gap-6">
 
               {/* 卡片1：微信 - 自定义图片 */}
-              <div
-                  className="relative p-6 rounded-2xl bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-lg animate-fade-in-up stagger-4">
+              <div className="relative p-6 rounded-2xl bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-lg animate-fade-in-up stagger-4">
                 <div className="flex flex-col items-center justify-center text-center gap-3 mb-4">
                   <WeChatIcon className="w-7 h-7 text-green-500 dark:text-green-400"/>
                   <div>
@@ -496,8 +493,7 @@ export default function AntiLossPage() {
               </div>
 
               {/* 卡片2：企业微信 - 自定义图片 */}
-              <div
-                  className="relative p-6 rounded-2xl bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-lg animate-fade-in-up stagger-5">
+              <div className="relative p-6 rounded-2xl bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-lg animate-fade-in-up stagger-5">
                 <div className="flex flex-col items-center justify-center text-center gap-3 mb-4">
                   <EnterpriseWeChatIcon className="w-7 h-7 text-blue-500 dark:text-blue-400"/>
                   <div>
@@ -513,8 +509,7 @@ export default function AntiLossPage() {
               </div>
 
               {/* 卡片3：公众号 - 自定义图片 */}
-              <div
-                  className="relative p-6 rounded-2xl bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-lg animate-fade-in-up stagger-6">
+              <div className="relative p-6 rounded-2xl bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-lg animate-fade-in-up stagger-6">
                 <div className="flex flex-col items-center justify-center text-center gap-3 mb-4">
                   <OfficialAccountIcon className="w-7 h-7 text-emerald-500 dark:text-emerald-400"/>
                   <div>
@@ -533,14 +528,12 @@ export default function AntiLossPage() {
 
           {/* Footer */}
           <footer className="mt-16 text-center opacity-0 animate-fade-in-up" style={{animationDelay: "0.7s"}}>
-            <div
-                className="flex items-center justify-center gap-3 text-muted-foreground/40 dark:text-muted-foreground/50 text-sm">
+            <div className="flex items-center justify-center gap-3 text-muted-foreground/40 dark:text-muted-foreground/50 text-sm">
               <div className="w-8 h-px bg-muted-foreground/20 dark:bg-muted-foreground/30"/>
               <span>长空通信 · {timeStr}</span>
               <div className="w-8 h-px bg-muted-foreground/20 dark:bg-muted-foreground/30"/>
             </div>
-            <div
-                className="mt-2 flex items-center justify-center gap-1.5 text-xs text-muted-foreground/30 dark:text-muted-foreground/40">
+            <div className="mt-2 flex items-center justify-center gap-1.5 text-xs text-muted-foreground/30 dark:text-muted-foreground/40">
               <MessageCircle className="w-3 h-3"/>
               <span>多渠道联系 · 信息不丢失 · 大流量卡全国可办</span>
             </div>
@@ -555,10 +548,11 @@ export default function AntiLossPage() {
                 <SecurityIcon className="w-3.5 h-3.5" />
                 <span>冀公网安备13053202001845号</span>
               </div>
+            </div>
 
-        {/* 备案信息底部分隔线 */}
-        <div className="mt-6 w-32 h-px bg-muted-foreground/10 dark:bg-muted-foreground/20 mx-auto"/>
-        <div className="mt-4 text-[10px] text-muted-foreground/20 dark:text-muted-foreground/30">
+            {/* 备案信息底部分隔线 */}
+            <div className="mt-6 w-32 h-px bg-muted-foreground/10 dark:bg-muted-foreground/20 mx-auto" />
+            <div className="mt-4 text-[10px] text-muted-foreground/20 dark:text-muted-foreground/30">
               © {new Date().getFullYear()} 邢台市长空科技有限公司 版权所有
             </div>
           </footer>
