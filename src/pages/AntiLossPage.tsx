@@ -152,17 +152,26 @@ const QRPlaceholder = ({ label }: { label: string }) => (
 
 /* ─── Theme Indicator ─── */
 
-const ThemeIndicator = ({ theme }: { theme: string }) => (
-  <div className="fixed top-4 right-4 z-50 flex items-center gap-2 px-3 py-1.5 rounded-full bg-card/80 backdrop-blur-xl border border-border/50 text-xs text-muted-foreground">
-    {theme === "dark" ? (
-      <Moon className="w-3.5 h-3.5" />
-    ) : (
-      <Sun className="w-3.5 h-3.5" />
-    )}
-    <span className="hidden sm:inline">{theme === "dark" ? "夜间模式" : "日间模式"}</span>
-    <span className="sm:hidden">{theme === "dark" ? "夜" : "日"}</span>
-  </div>
-);
+import { useTheme } from "next-themes"; // 必须引入
+import { Moon, Sun } from "lucide-react";
+
+const ThemeIndicator = () => {
+  const { theme } = useTheme(); // 实时获取当前主题
+
+  return (
+      <div className="fixed top-4 right-4 z-50 flex items-center gap-2 px-3 py-1.5 rounded-full bg-card/80 backdrop-blur-xl border border-border/50 text-xs text-muted-foreground">
+        {theme === "dark" ? (
+            <Moon className="w-3.5 h-3.5" />
+        ) : (
+            <Sun className="w-3.5 h-3.5" />
+        )}
+        <span className="hidden sm:inline">{theme === "dark" ? "夜间模式" : "日间模式"}</span>
+        <span className="sm:hidden">{theme === "dark" ? "夜" : "日"}</span>
+      </div>
+  );
+};
+
+export default ThemeIndicator;
 
 /* ─── Channel Card ─── */
 
