@@ -272,13 +272,14 @@ export default function AntiLossPage() {
         <header className="text-center mb-12 sm:mb-16">
           {/* Signal animation */}
           <div className="flex justify-center mb-6 opacity-0 animate-fade-in-up stagger-1">
-            <SignalWave />
+            <SignalWave/>
           </div>
 
           {/* Title */}
           <div className="opacity-0 animate-fade-in-up stagger-2">
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 dark:bg-primary/15 border border-primary/20 dark:border-primary/25 text-primary text-sm font-medium mb-6">
-              <Shield className="w-4 h-4" />
+            <div
+                className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 dark:bg-primary/15 border border-primary/20 dark:border-primary/25 text-primary text-sm font-medium mb-6">
+              <Shield className="w-4 h-4"/>
               <span>稳定连接 · 永不失联</span>
             </div>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-3">
@@ -289,7 +290,7 @@ export default function AntiLossPage() {
             <h2 className="text-lg sm:text-xl font-medium text-muted-foreground tracking-widest uppercase">
               Changkong Communication
             </h2>
-            <div className="mt-4 w-24 h-0.5 bg-gradient-to-r from-transparent via-primary/50 to-transparent mx-auto" />
+            <div className="mt-4 w-24 h-0.5 bg-gradient-to-r from-transparent via-primary/50 to-transparent mx-auto"/>
           </div>
         </header>
 
@@ -297,28 +298,28 @@ export default function AntiLossPage() {
         <section className="mb-12">
           <div className="opacity-0 animate-fade-in-up stagger-2">
             <div className="flex items-center justify-center gap-2 mb-6">
-              <Activity className="w-4 h-4 text-primary" />
+              <Activity className="w-4 h-4 text-primary"/>
               <h3 className="text-sm font-medium text-muted-foreground uppercase tracking-wider">主营业务</h3>
             </div>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 max-w-3xl mx-auto">
             <DataPlanBadge
-              icon={Database}
-              label="全国大流量卡"
-              value="50GB - 1100GB/月"
-              delay="stagger-3"
+                icon={Database}
+                label="全国大流量卡"
+                value="50GB - 1100GB/月"
+                delay="stagger-3"
             />
             <DataPlanBadge
-              icon={Wifi}
-              label="4G/5G 高速网络"
-              value="全国通用 · 不限速"
-              delay="stagger-4"
+                icon={Wifi}
+                label="4G/5G 高速网络"
+                value="全国通用 · 不限速"
+                delay="stagger-4"
             />
             <DataPlanBadge
-              icon={Smartphone}
-              label="各地归属地"
-              value="多省可选 · 正规号卡"
-              delay="stagger-5"
+                icon={Smartphone}
+                label="各地归属地"
+                value="多省可选 · 正规号卡"
+                delay="stagger-5"
             />
           </div>
         </section>
@@ -326,23 +327,26 @@ export default function AntiLossPage() {
         {/* Notice Banner */}
         <div className="opacity-0 animate-fade-in-up stagger-3 mb-12">
           <div className="relative group">
-            <div className="absolute -inset-0.5 bg-gradient-to-r from-amber-500/20 via-orange-500/20 to-amber-500/20 rounded-2xl blur opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-            <div className="relative bg-card/50 dark:bg-card/70 backdrop-blur-xl border border-border/40 rounded-2xl p-5 sm:p-6 flex flex-col sm:flex-row items-center gap-5 transition-all duration-300 hover:border-amber-500/30">
-              <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-amber-500/10 dark:bg-amber-500/15 border border-amber-500/20 flex items-center justify-center">
-                <Bell className="w-6 h-6 text-amber-500" />
+            <div
+                className="absolute -inset-0.5 bg-gradient-to-r from-amber-500/20 via-orange-500/20 to-amber-500/20 rounded-2xl blur opacity-0 group-hover:opacity-100 transition-opacity duration-500"/>
+            <div
+                className="relative bg-card/50 dark:bg-card/70 backdrop-blur-xl border border-border/40 rounded-2xl p-5 sm:p-6 flex flex-col sm:flex-row items-center gap-5 transition-all duration-300 hover:border-amber-500/30">
+              <div
+                  className="flex-shrink-0 w-12 h-12 rounded-xl bg-amber-500/10 dark:bg-amber-500/15 border border-amber-500/20 flex items-center justify-center">
+                <Bell className="w-6 h-6 text-amber-500"/>
               </div>
               <div className="flex-1 text-center sm:text-left">
                 <p className="text-xs text-muted-foreground mb-1 uppercase tracking-wider">重要通知</p>
                 <p className="text-base font-medium text-foreground">
                   更新资费请查看{" "}
                   <a
-                    href="https://10010.co"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1 text-primary hover:text-accent transition-colors font-semibold"
+                      href="https://10010.co"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1 text-primary hover:text-accent transition-colors font-semibold"
                   >
                     10010.co
-                    <ArrowUpRight className="w-3.5 h-3.5" />
+                    <ArrowUpRight className="w-3.5 h-3.5"/>
                   </a>
                 </p>
               </div>
@@ -361,50 +365,63 @@ export default function AntiLossPage() {
         <section>
           <div className="opacity-0 animate-fade-in-up stagger-4">
             <div className="flex items-center justify-center gap-2 mb-8">
-              <Signal className="w-4 h-4 text-primary" />
+              <Signal className="w-4 h-4 text-primary"/>
               <h3 className="text-sm font-medium text-muted-foreground uppercase tracking-wider">多渠道联系</h3>
             </div>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 sm:gap-6">
-            <ChannelCard
-              icon={<WeChatIcon className="w-7 h-7 text-green-500" />}
-              title="微信"
-              subtitle="添加客服微信"
-              qrLabel="https://pic2.ziyuan.wang/user/ikmoe/2026/02/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20260220123650_1110_72_c0ce5c2c0a517.png"
-              delay="stagger-4"
-              accentColor="bg-green-500"
-              glowColor="rgba(34, 197, 94, 0.15)"
-            />
-            <ChannelCard
-              icon={<EnterpriseWeChatIcon className="w-7 h-7 text-blue-500" />}
-              title="企业微信"
-              subtitle="企业微信客服"
-              qrLabel="https://pic2.ziyuan.wang/user/ikmoe/2026/02/17570736635931401388095cad14166ba2f_1c52f6523a3fd.png"
-              delay="stagger-5"
-              accentColor="bg-blue-500"
-              glowColor="rgba(59, 130, 246, 0.15)"
-            />
-            <ChannelCard
-              icon={<OfficialAccountIcon className="w-7 h-7 text-emerald-500" />}
-              title="公众号"
-              subtitle="关注官方公众号"
-              qrLabel="https://pic2.ziyuan.wang/user/ikmoe/2026/03/e_f52e9acf24f40.png"
-              delay="stagger-6"
-              accentColor="bg-emerald-500"
-              glowColor="rgba(16, 185, 129, 0.15)"
-            />
+
+            {/* 卡片1：微信 - 自定义图片 */}
+            <div className="relative p-6 rounded-2xl bg-white border shadow-lg animate-fade-in-up stagger-4">
+              <div className="flex items-center gap-3 mb-4">
+                <WeChatIcon className="w-7 h-7 text-green-500"/>
+                <div>
+                  <h4 className="font-semibold">微信</h4>
+                  <p className="text-sm text-muted-foreground">添加客服微信</p>
+                </div>
+              </div>
+              {/* 自定义图片 */}
+              <img src="https://pic2.ziyuan.wang/user/ikmoe/2026/02/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20260220123650_1110_72_c0ce5c2c0a517.png" alt="微信" className="w-full h-auto rounded-lg"/>
+            </div>
+
+            {/* 卡片2：企业微信 - 自定义图片 */}
+            <div className="relative p-6 rounded-2xl bg-white border shadow-lg animate-fade-in-up stagger-5">
+              <div className="flex items-center gap-3 mb-4">
+                <EnterpriseWeChatIcon className="w-7 h-7 text-blue-500"/>
+                <div>
+                  <h4 className="font-semibold">企业微信</h4>
+                  <p className="text-sm text-muted-foreground">企业微信客服</p>
+                </div>
+              </div>
+              {/* 自定义图片 */}
+              <img src="https://pic2.ziyuan.wang/user/ikmoe/2026/02/17570736635931401388095cad14166ba2f_1c52f6523a3fd.png" alt="企业微信" className="w-full h-auto rounded-lg"/>
+            </div>
+
+            {/* 卡片3：公众号 - 自定义图片 */}
+            <div className="relative p-6 rounded-2xl bg-white border shadow-lg animate-fade-in-up stagger-6">
+              <div className="flex items-center gap-3 mb-4">
+                <OfficialAccountIcon className="w-7 h-7 text-emerald-500"/>
+                <div>
+                  <h4 className="font-semibold">公众号</h4>
+                  <p className="text-sm text-muted-foreground">关注官方公众号</p>
+                </div>
+              </div>
+              {/* 自定义图片 */}
+              <img src="https://pic2.ziyuan.wang/user/ikmoe/2026/03/e_f52e9acf24f40.png" alt="公众号" className="w-full h-auto rounded-lg"/>
+            </div>
+
           </div>
         </section>
 
         {/* Footer */}
-        <footer className="mt-16 text-center opacity-0 animate-fade-in-up" style={{ animationDelay: "0.7s" }}>
+        <footer className="mt-16 text-center opacity-0 animate-fade-in-up" style={{animationDelay: "0.7s"}}>
           <div className="flex items-center justify-center gap-3 text-muted-foreground/40 text-sm">
-            <div className="w-8 h-px bg-muted-foreground/20" />
+            <div className="w-8 h-px bg-muted-foreground/20"/>
             <span>长空通信 · {timeStr}</span>
-            <div className="w-8 h-px bg-muted-foreground/20" />
+            <div className="w-8 h-px bg-muted-foreground/20"/>
           </div>
           <div className="mt-2 flex items-center justify-center gap-1.5 text-xs text-muted-foreground/30">
-            <MessageCircle className="w-3 h-3" />
+            <MessageCircle className="w-3 h-3"/>
             <span>多渠道触达 · 信息不丢失 · 大流量卡全国可办</span>
           </div>
         </footer>
