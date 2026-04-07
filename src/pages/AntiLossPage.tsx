@@ -546,8 +546,6 @@ export default function AntiLossPage() {
             </div>
 
             {/* 备案信息 */}
-            <div
-                className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4 text-xs text-muted-foreground/60 dark:text-muted-foreground/50">
               <a href="https://beian.miit.gov.cn/" rel="noreferrer"
                  target="_blank">冀ICP备2025137442号-1</a>
             </div>
