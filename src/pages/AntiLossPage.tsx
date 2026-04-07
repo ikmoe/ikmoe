@@ -538,32 +538,31 @@ export default function AntiLossPage() {
               <span>多渠道联系 · 信息不丢失 · 大流量卡全国可办</span>
             </div>
 
-            /* ─── Record Info (备案信息组件) ─── */
-            const RecordInfo = () => {
-            return (
-            <div className="opacity-0 animate-fade-in-up stagger-6 mt-16 pt-8 border-t border-border/30 dark:border-border/50">
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-xs text-muted-foreground/70 dark:text-muted-foreground/60">
-          {/* 工信部备案号 */}
-            <a
-                href="https://beian.miit.gov.cn/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-1 hover:text-primary dark:hover:text-primary/80 transition-colors"
-            >
-              <span>冀ICP备2025137442号-1</span>
-              <ArrowUpRight className="w-2.5 h-2.5" />
-            </a>
+            {/* 备案信息 */}
+            <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4 text-xs text-muted-foreground/60 dark:text-muted-foreground/50">
+              {/* ICP备案 + 超链接 */}
+              <a
+                  href="https://beian.miit.gov.cn/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-1.5 hover:text-primary transition-colors"
+              >
+                <ICPIcon className="w-3.5 h-3.5" />
+                冀ICP备2025137442号-1
+              </a>
 
-            {/* 公安备案号 */}
-            <a
-                href="http://www.beian.gov.cn/portal/registerSystemInfo"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-1 hover:text-primary dark:hover:text-primary/80 transition-colors"
-            >
-              <span>冀公网安备13053202001845号</span>
-              <ArrowUpRight className="w-2.5 h-2.5" />
-            </a>
+              {/* 公安备案 + 超链接 */}
+              <a
+                  href="http://www.beian.gov.cn/portal/registerSystemInfo"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-1.5 hover:text-primary transition-colors"
+              >
+                <SecurityIcon className="w-3.5 h-3.5" />
+                冀公网安备13053202001845号
+              </a>
+            </div>
+
             {/* 备案信息底部分隔线 */}
             <div className="mt-6 w-32 h-px bg-muted-foreground/10 dark:bg-muted-foreground/20 mx-auto" />
             <div className="mt-4 text-[10px] text-muted-foreground/20 dark:text-muted-foreground/30">
@@ -572,5 +571,5 @@ export default function AntiLossPage() {
           </footer>
         </div>
       </div>
-);
+  );
 }
