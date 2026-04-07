@@ -305,12 +305,12 @@ export default function AntiLossPage() {
             <DataPlanBadge
               icon={Database}
               label="全国大流量卡"
-              value="100GB - 300GB/月"
+              value="50GB - 1100GB/月"
               delay="stagger-3"
             />
             <DataPlanBadge
               icon={Wifi}
-              label="5G 高速网络"
+              label="4G/5G 高速网络"
               value="全国通用 · 不限速"
               delay="stagger-4"
             />
@@ -347,7 +347,11 @@ export default function AntiLossPage() {
                 </p>
               </div>
               <div className="flex-shrink-0">
-                <QRPlaceholder label="网站更新" />
+                <img
+                    src="https://pic2.ziyuan.wang/user/ikmoe/2026/02/%E4%B8%8B%E8%BD%BD%20_1__7b01b2616e762.png"
+                    alt="二维码"
+                    className="w-[120px] h-[120px] object-contain"
+                />
               </div>
             </div>
           </div>
