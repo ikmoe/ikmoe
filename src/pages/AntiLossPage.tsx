@@ -112,6 +112,27 @@ const OfficialAccountIcon = ({ className = "" }: { className?: string }) => (
     </svg>
 );
 
+// 备案相关图标
+const ICPIcon = ({ className = "" }: { className?: string }) => (
+    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
+      <path d="M9 3v4" />
+      <path d="M15 3v4" />
+      <path d="M9 17v4" />
+      <path d="M15 17v4" />
+      <path d="M21 9h-4" />
+      <path d="M7 9H3" />
+      <path d="M21 15h-4" />
+      <path d="M7 15H3" />
+    </svg>
+);
+
+const SecurityIcon = ({ className = "" }: { className?: string }) => (
+    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+    </svg>
+);
+
 /* ─── Circuit Board Background ─── */
 
 const CircuitBackground = () => (
@@ -271,40 +292,6 @@ const DataPlanBadge = ({ icon: Icon, label, value, delay }: { icon: typeof Zap; 
     </div>
 );
 
-/* ─── Record Info (备案信息组件) ─── */
-const RecordInfo = () => {
-  return (
-      <div className="opacity-0 animate-fade-in-up stagger-6 mt-16 pt-8 border-t border-border/30 dark:border-border/50">
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-xs text-muted-foreground/70 dark:text-muted-foreground/60">
-          {/* 工信部备案号 */}
-          <a
-              href="https://beian.miit.gov.cn/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-1 hover:text-primary dark:hover:text-primary/80 transition-colors"
-          >
-            <span>冀ICP备2025137442号-1</span>
-            <ArrowUpRight className="w-2.5 h-2.5" />
-          </a>
-
-          {/* 公安备案号 */}
-          <a
-              href="http://www.beian.gov.cn/portal/registerSystemInfo"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-1 hover:text-primary dark:hover:text-primary/80 transition-colors"
-          >
-            <span>冀公网安备13053202001845号</span>
-            <ArrowUpRight className="w-2.5 h-2.5" />
-          </a>
-
-          {/* 额外的版权信息（可选） */}
-          <span className="mt-2 sm:mt-0">© 2026 邢台市长空科技有限公司 版权所有</span>
-        </div>
-      </div>
-  );
-};
-
 /* ─── Main Page ─── */
 
 export default function AntiLossPage() {
@@ -456,19 +443,134 @@ export default function AntiLossPage() {
                   className="absolute -inset-0.5 bg-gradient-to-r from-amber-500/20 via-orange-500/20 to-amber-500/20 dark:from-amber-500/30 dark:via-orange-500/30 dark:to-amber-500/20 rounded-2xl blur opacity-0 group-hover:opacity-100 transition-opacity duration-500"/>
               <div
                   className="relative bg-card/50 dark:bg-card/70 backdrop-blur-xl border border-border/40 dark:border-border/60 rounded-2xl p-5 flex flex-col items-center text-center gap-4 transition-all duration-300 hover:border-amber-500/30 dark:hover:border-amber-500/40">
-                {/* 这里补充Notice Banner的内容（原代码被截断） */}
-                <Bell className="w-5 h-5 text-amber-500 dark:text-amber-400" />
-                <h4 className="font-medium text-foreground dark:text-foreground/90">温馨提示</h4>
-                <p className="text-sm text-muted-foreground dark:text-muted-foreground/80">
-                  所有号卡均为正规运营商授权，激活后享受官方售后保障
-                </p>
+                <div
+                    className="flex-shrink-0 w-12 h-12 rounded-xl bg-amber-500/10 dark:bg-amber-500/15 border border-amber-500/20 dark:border-amber-500/25 flex items-center justify-center">
+                  <Bell className="w-6 h-6 text-amber-500 dark:text-amber-400"/>
+                </div>
+                <div>
+                  <p className="text-xs text-muted-foreground dark:text-muted-foreground/70 mb-1 uppercase tracking-wider">重要通知</p>
+                  <p className="text-base font-medium text-foreground dark:text-foreground/90">
+                    更新资费请查看{" "}
+                    <a
+                        href="https://10010.co"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-1 text-primary dark:text-primary/90 hover:text-accent dark:hover:text-accent/90 transition-colors font-semibold"
+                    >
+                      10010.co
+                      <ArrowUpRight className="w-3.5 h-3.5"/>
+                    </a>
+                  </p>
+                </div>
               </div>
             </div>
           </div>
 
-          {/* 备案信息组件 */}
-          <RecordInfo />
+          {/* Channel Cards */}
+          <section>
+            <div className="opacity-0 animate-fade-in-up stagger-4">
+              <div className="flex items-center justify-center gap-2 mb-8">
+                <Signal className="w-4 h-4 text-primary dark:text-primary/90"/>
+                <h3 className="text-sm font-medium text-muted-foreground dark:text-muted-foreground/80 uppercase tracking-wider">多渠道联系</h3>
+              </div>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 sm:gap-6">
+
+              {/* 卡片1：微信 - 自定义图片 */}
+              <div className="relative p-6 rounded-2xl bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-lg animate-fade-in-up stagger-4">
+                <div className="flex flex-col items-center justify-center text-center gap-3 mb-4">
+                  <WeChatIcon className="w-7 h-7 text-green-500 dark:text-green-400"/>
+                  <div>
+                    <h4 className="font-semibold text-gray-900 dark:text-white">微信</h4>
+                    <p className="text-sm text-muted-foreground dark:text-muted-foreground/70">添加客服微信</p>
+                  </div>
+                </div>
+                {/* 自定义图片 */}
+                <img
+                    src="https://pic2.ziyuan.wang/user/ikmoe/2026/02/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20260220123650_1110_72_c0ce5c2c0a517.png"
+                    alt="微信" className="w-full h-auto rounded-lg"/>
+                <p className="text-center text-sm text-gray-500 dark:text-gray-400 mt-2">长按扫码添加</p>
+              </div>
+
+              {/* 卡片2：企业微信 - 自定义图片 */}
+              <div className="relative p-6 rounded-2xl bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-lg animate-fade-in-up stagger-5">
+                <div className="flex flex-col items-center justify-center text-center gap-3 mb-4">
+                  <EnterpriseWeChatIcon className="w-7 h-7 text-blue-500 dark:text-blue-400"/>
+                  <div>
+                    <h4 className="font-semibold text-gray-900 dark:text-white">企业微信</h4>
+                    <p className="text-sm text-muted-foreground dark:text-muted-foreground/70">企业微信客服</p>
+                  </div>
+                </div>
+                {/* 自定义图片 */}
+                <img
+                    src="https://pic2.ziyuan.wang/user/ikmoe/2026/02/17570736635931401388095cad14166ba2f_1c52f6523a3fd.png"
+                    alt="企业微信" className="w-full h-auto rounded-lg"/>
+                <p className="text-center text-sm text-gray-500 dark:text-gray-400 mt-2">长按扫码添加</p>
+              </div>
+
+              {/* 卡片3：公众号 - 自定义图片 */}
+              <div className="relative p-6 rounded-2xl bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-lg animate-fade-in-up stagger-6">
+                <div className="flex flex-col items-center justify-center text-center gap-3 mb-4">
+                  <OfficialAccountIcon className="w-7 h-7 text-emerald-500 dark:text-emerald-400"/>
+                  <div>
+                    <h4 className="font-semibold text-gray-900 dark:text-white">公众号</h4>
+                    <p className="text-sm text-muted-foreground dark:text-muted-foreground/70">关注官方公众号</p>
+                  </div>
+                </div>
+                {/* 自定义图片 */}
+                <img src="https://pic2.ziyuan.wang/user/ikmoe/2026/03/e_f52e9acf24f40.png" alt="公众号"
+                     className="w-full h-auto rounded-lg"/>
+                <p className="text-center text-sm text-gray-500 dark:text-gray-400 mt-2">长按扫码关注</p>
+              </div>
+
+            </div>
+          </section>
+
+          {/* Footer */}
+          <footer className="mt-16 text-center opacity-0 animate-fade-in-up" style={{animationDelay: "0.7s"}}>
+            <div className="flex items-center justify-center gap-3 text-muted-foreground/40 dark:text-muted-foreground/50 text-sm">
+              <div className="w-8 h-px bg-muted-foreground/20 dark:bg-muted-foreground/30"/>
+              <span>长空通信 · {timeStr}</span>
+              <div className="w-8 h-px bg-muted-foreground/20 dark:bg-muted-foreground/30"/>
+            </div>
+            <div className="mt-2 flex items-center justify-center gap-1.5 text-xs text-muted-foreground/30 dark:text-muted-foreground/40">
+              <MessageCircle className="w-3 h-3"/>
+              <span>多渠道联系 · 信息不丢失 · 大流量卡全国可办</span>
+            </div>
+
+            /* ─── Record Info (备案信息组件) ─── */
+            const RecordInfo = () => {
+            return (
+            <div className="opacity-0 animate-fade-in-up stagger-6 mt-16 pt-8 border-t border-border/30 dark:border-border/50">
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-xs text-muted-foreground/70 dark:text-muted-foreground/60">
+          {/* 工信部备案号 */}
+            <a
+                href="https://beian.miit.gov.cn/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-1 hover:text-primary dark:hover:text-primary/80 transition-colors"
+            >
+              <span>冀ICP备2025137442号-1</span>
+              <ArrowUpRight className="w-2.5 h-2.5" />
+            </a>
+
+            {/* 公安备案号 */}
+            <a
+                href="http://www.beian.gov.cn/portal/registerSystemInfo"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-1 hover:text-primary dark:hover:text-primary/80 transition-colors"
+            >
+              <span>冀公网安备13053202001845号</span>
+              <ArrowUpRight className="w-2.5 h-2.5" />
+            </a>
+            {/* 备案信息底部分隔线 */}
+            <div className="mt-6 w-32 h-px bg-muted-foreground/10 dark:bg-muted-foreground/20 mx-auto" />
+            <div className="mt-4 text-[10px] text-muted-foreground/20 dark:text-muted-foreground/30">
+              © {new Date().getFullYear()} 邢台市长空科技有限公司 版权所有
+            </div>
+          </footer>
         </div>
       </div>
-  );
+);
 }
