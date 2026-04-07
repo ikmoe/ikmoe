@@ -283,7 +283,7 @@ const RecordInfo = () => {
               rel="noopener noreferrer"
               className="flex items-center gap-1 hover:text-primary dark:hover:text-primary/80 transition-colors"
           >
-            <span>粤ICP备2025XXXX号-1</span>
+            <span>冀ICP备2025137442号-1</span>
             <ArrowUpRight className="w-2.5 h-2.5" />
           </a>
 
@@ -294,12 +294,12 @@ const RecordInfo = () => {
               rel="noopener noreferrer"
               className="flex items-center gap-1 hover:text-primary dark:hover:text-primary/80 transition-colors"
           >
-            <span>粤公网安备440106XXXX号</span>
+            <span>冀公网安备13053202001845号</span>
             <ArrowUpRight className="w-2.5 h-2.5" />
           </a>
 
           {/* 额外的版权信息（可选） */}
-          <span className="mt-2 sm:mt-0">© 2025 长空通信 版权所有</span>
+          <span className="mt-2 sm:mt-0">© 2026 邢台市长空科技有限公司 版权所有</span>
         </div>
       </div>
   );
