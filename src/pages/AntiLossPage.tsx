@@ -280,7 +280,7 @@ export default function AntiLossPage() {
             <div
                 className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 dark:bg-primary/15 border border-primary/20 dark:border-primary/25 text-primary text-sm font-medium mb-6">
               <Shield className="w-4 h-4"/>
-              <span>稳定连接 · 永不失联</span>
+              <span>全国资费 · 官方授权</span>
             </div>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-3">
               <span className="bg-gradient-to-r from-primary via-primary to-accent bg-clip-text text-transparent">
@@ -381,7 +381,10 @@ export default function AntiLossPage() {
                 </div>
               </div>
               {/* 自定义图片 */}
-              <img src="https://pic2.ziyuan.wang/user/ikmoe/2026/02/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20260220123650_1110_72_c0ce5c2c0a517.png" alt="微信" className="w-full h-auto rounded-lg"/>
+              <img
+                  src="https://pic2.ziyuan.wang/user/ikmoe/2026/02/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20260220123650_1110_72_c0ce5c2c0a517.png"
+                  alt="微信" className="w-full h-auto rounded-lg"/>
+              <p className="text-center text-sm text-gray-500 mt-2">长按扫码添加</p>
             </div>
 
             {/* 卡片2：企业微信 - 自定义图片 */}
@@ -394,7 +397,10 @@ export default function AntiLossPage() {
                 </div>
               </div>
               {/* 自定义图片 */}
-              <img src="https://pic2.ziyuan.wang/user/ikmoe/2026/02/17570736635931401388095cad14166ba2f_1c52f6523a3fd.png" alt="企业微信" className="w-full h-auto rounded-lg"/>
+              <img
+                  src="https://pic2.ziyuan.wang/user/ikmoe/2026/02/17570736635931401388095cad14166ba2f_1c52f6523a3fd.png"
+                  alt="企业微信" className="w-full h-auto rounded-lg"/>
+              <p className="text-center text-sm text-gray-500 mt-2">长按扫码添加</p>
             </div>
 
             {/* 卡片3：公众号 - 自定义图片 */}
@@ -407,7 +413,9 @@ export default function AntiLossPage() {
                 </div>
               </div>
               {/* 自定义图片 */}
-              <img src="https://pic2.ziyuan.wang/user/ikmoe/2026/03/e_f52e9acf24f40.png" alt="公众号" className="w-full h-auto rounded-lg"/>
+              <img src="https://pic2.ziyuan.wang/user/ikmoe/2026/03/e_f52e9acf24f40.png" alt="公众号"
+                   className="w-full h-auto rounded-lg"/>
+              <p className="text-center text-sm text-gray-500 mt-2">长按扫码关注</p>
             </div>
 
           </div>
