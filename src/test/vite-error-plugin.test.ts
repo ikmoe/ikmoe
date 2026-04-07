@@ -55,7 +55,7 @@ describe("vite-error-plugin: transformIndexHtml", () => {
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vesa App</title>
+    <title>长空通讯防失联页</title>
   </head>
   <body>
     <div id="root"></div>
