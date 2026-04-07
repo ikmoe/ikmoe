@@ -373,7 +373,7 @@ export default function AntiLossPage() {
 
             {/* 卡片1：微信 - 自定义图片 */}
             <div className="relative p-6 rounded-2xl bg-white border shadow-lg animate-fade-in-up stagger-4">
-              <div className="flex items-center gap-3 mb-4">
+              <div className="flex flex-col items-center justify-center text-center gap-3 mb-4">
                 <WeChatIcon className="w-7 h-7 text-green-500"/>
                 <div>
                   <h4 className="font-semibold">微信</h4>
@@ -386,7 +386,7 @@ export default function AntiLossPage() {
 
             {/* 卡片2：企业微信 - 自定义图片 */}
             <div className="relative p-6 rounded-2xl bg-white border shadow-lg animate-fade-in-up stagger-5">
-              <div className="flex items-center gap-3 mb-4">
+              <div className="flex flex-col items-center justify-center text-center gap-3 mb-4">
                 <EnterpriseWeChatIcon className="w-7 h-7 text-blue-500"/>
                 <div>
                   <h4 className="font-semibold">企业微信</h4>
@@ -399,7 +399,7 @@ export default function AntiLossPage() {
 
             {/* 卡片3：公众号 - 自定义图片 */}
             <div className="relative p-6 rounded-2xl bg-white border shadow-lg animate-fade-in-up stagger-6">
-              <div className="flex items-center gap-3 mb-4">
+              <div className="flex flex-col items-center justify-center text-center gap-3 mb-4">
                 <OfficialAccountIcon className="w-7 h-7 text-emerald-500"/>
                 <div>
                   <h4 className="font-semibold">公众号</h4>
@@ -422,7 +422,7 @@ export default function AntiLossPage() {
           </div>
           <div className="mt-2 flex items-center justify-center gap-1.5 text-xs text-muted-foreground/30">
             <MessageCircle className="w-3 h-3"/>
-            <span>多渠道触达 · 信息不丢失 · 大流量卡全国可办</span>
+            <span>多渠道联系 · 信息不丢失 · 大流量卡全国可办</span>
           </div>
         </footer>
       </div>
