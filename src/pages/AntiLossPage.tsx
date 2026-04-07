@@ -150,19 +150,7 @@ const QRPlaceholder = ({ label }: { label: string }) => (
   </div>
 );
 
-/* ─── Theme Indicator ─── */
-
-const ThemeIndicator = ({ theme }: { theme: string }) => (
-    <div className="fixed top-4 right-4 z-50 flex items-center gap-2 px-3 py-1.5 rounded-full bg-card/80 backdrop-blur-xl border border-border/50 text-xs text-muted-foreground">
-      {theme === "dark" ? (
-          <Moon className="w-3.5 h-3.5" />
-      ) : (
-          <Sun className="w-3.5 h-3.5" />
-      )}
-      <span className="hidden sm:inline">{theme === "dark" ? "夜间模式" : "日间模式"}</span>
-      <span className="sm:hidden">{theme === "dark" ? "夜" : "日"}</span>
-    </div>
-);
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=298 height=52 src="//music.163.com/outchain/player?type=2&id=2619637167&auto=1&height=32"></iframe>
 
 /* ─── Channel Card ─── */
 
