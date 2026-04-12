@@ -11,16 +11,16 @@
   <script>
     // 获取当前访问的域名（不带端口）
     const domain = window.location.hostname;
+    console.log("当前访问域名：", domain); // 调试用，可看到真实域名
 
-    // 配置不同域名对应的标题、描述、推特标题
+    // 配置：必须写 真实完整域名，不能写 * 通配符
     const domainConfig = {
-      // 你可以无限添加域名
-      "*.hk.sb": {
+      "hk.sb": {
         title: "长空通信 - 官方网站",
         desc: "更多套餐请看10010.co",
         ogTitle: "长空通信 - 官方网站"
       },
-      "hk.sb": {
+      "www.hk.sb": {
         title: "长空通信 - 官方网站",
         desc: "更多套餐请看10010.co",
         ogTitle: "长空通信 - 官方网站"
@@ -29,38 +29,33 @@
         title: "长空通信",
         desc: "更多套餐请看10010.co",
         ogTitle: "邢台市长空科技有限公司"
-      }
-      "*.skunicom.com": {
+      },
+      "www.skunicom.com": {
         title: "长空通信",
         desc: "更多套餐请看10010.co",
         ogTitle: "邢台市长空科技有限公司"
       }
     };
 
-    // 默认配置（没有匹配到域名时使用）
+    // 默认配置（匹配不到域名时使用）
     const defaultConfig = {
       title: "长空通信",
       desc: "更多套餐请看10010.co",
       ogTitle: "长空通信"
     };
 
-    // 自动匹配配置
+    // 自动匹配
     const config = domainConfig[domain] || defaultConfig;
 
     // 设置标题
     document.title = config.title;
 
-    // 设置 description
-    document.querySelector('meta[name="description"]').setAttribute("content", config.desc);
-
-    // 设置 OG 标题（社交分享用）
-    document.querySelector('meta[property="og:title"]').setAttribute("content", config.ogTitle);
-
-    // 设置 OG 描述
-    document.querySelector('meta[property="og:description"]').setAttribute("content", config.desc);
+    // 设置 meta 描述
+    document.querySelector('meta[name="description"]').content = config.desc;
+    document.querySelector('meta[property="og:title"]').content = config.ogTitle;
+    document.querySelector('meta[property="og:description"]').content = config.desc;
   </script>
 
-  <!-- 以下 meta 会被上面 JS 自动覆盖内容，必须保留标签 -->
   <meta name="description" content="" />
   <meta property="og:title" content="" />
   <meta property="og:description" content="" />
@@ -69,7 +64,7 @@
     var _hmt = _hmt || [];
     (function() {
       var hm = document.createElement("script");
-      hm.src = "https://hm.baidu.com/hm.js?a9d617494c44d94897ee04c4e68988a4";
+      hm.src = "https://hm.hm.baidu.com/hm.js?a9d617494c44d94897ee04c4e68988a4";
       var s = document.getElementsByTagName("script")[0];
       s.parentNode.insertBefore(hm, s);
     })();
